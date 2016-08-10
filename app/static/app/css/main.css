@@ -4,3 +4,27 @@
   width: 275px;
   margin-left: 50px;
 }
+
+#brands{
+  padding-top: 20px;
+  display: inline-block;
+  align-items: center;
+  margin-left: 40px;
+}
+
+#skills{
+  padding-top: 20px;
+  display: inline-block;
+  align-items: center;
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo{
+  padding-left: 20px;
+}
+
+#btn{
+  width: 200px;
+}

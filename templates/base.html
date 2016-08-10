@@ -16,18 +16,20 @@
   <body>
     <nav>
     <div class="nav-wrapper white">
-      <a href="#!" class="brand-logo">Logo</a>
+      <a id="logo" href="#!" class="brand-logo blue-grey-text text-darken-1-text">Bill Gardner</a>
       <ul class="right hide-on-med-and-down">
-        <li><a class="grey-text">Who I Am</a></li>
-        <li><a class="grey-text">What I Make</a></li>
-        <li><a class="grey-text">What I Do</a></li>
-        <li><a class="grey-text">Why I Do This</a></li>
-        <li><a class="grey-text">How I Do This</a></li>
+        <li><a id="btn" class="waves-effect blue-grey darken-1 btn">About</a></li>
+        <li><a id="btn" class="waves-effect blue-grey darken-1 btn">Portfolio</a></li>
+        <li><a id="btn" class="waves-effect blue-grey darken-1 btn">Tools</a></li>
+        <li><a id="btn" class="waves-effect blue-grey darken-1 btn">Contact</a></li>
       </ul>
     </div>
   </nav>
     {% block introcontent %}
       This is a place that no longer exists.
+    {% endblock %}
+    {% block about %}
+      This is a place that probably should exist.
     {% endblock %}
     {% block portfolio %}
       This is a place that will soon exist.
@@ -35,10 +37,17 @@
     {% block skills %}
       This is a place that has existed for some time.
     {% endblock %}
+    {% block resume %}
+      This is a place that may or may not exist.
+    {% endblock %}
+    {% block contact %}
+      This is a place that has never existed
+    {% endblock %}
     <div class="container">
-      <footer>
-        <h6><div class="glyphicon glyphicon-copyright-mark pull-right">  Copyright 2016 William John Gardner</div><h6>
-      </footer>
+        <footer>
+          <h6><div class="glyphicon glyphicon-copyright-mark pull-right">  Copyright 2016 William John Gardner</div><h6>
+        </footer>
+    </div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="{% static 'app/js/materialize.js' %}"></script>

@@ -3,50 +3,37 @@
 
 
 {% block introcontent %}
+  <img id="gears" src="{% static 'app/images/gears.jpg' %}" alt="Bill Gardner"></img>
+{% endblock %}
+{% block about %}
+<div class="container">
   <br>
   <br>
-  <div class="container">
-    <div class="row">
-      <div class="col s5">
-        <img id="headshot" class="thumbnail z-depth-4" src="{% static 'app/images/headshot.jpg' %}" alt="Bill Gardner"></img>
-      </div>
-      <div class="col s7">
-        <h2>Bill Gardner</h2>
-        <br>
-        <h6><i class="fa fa-github" aria-hidden="true"></i><a href="http://www.github.com/williamjohngardner" target="blank" >  github.com/williamjohngardner</a></h6>
-        <h6><i class="fa fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/williamjohngardner" target="blank" >  linkedin.com/in/williamjohngardner</a></h6>
-        <br>
-        <h6>I’ve had a hammer in my hand since I was big enough to hold one and have been building things ever since I got my first set of Legos for Christmas.</h6>
-          <h6>I hold a strong connection to the ethos of the Maker and DIY movements and truly value skills and work ethic above most other things; to that end I strive to develop tools to help Makers of all types create beautiful objects in a more efficient and accurate fashion.</h6>
-          <h6>I’m a recent graduate of The Iron Yard in Greenville, South Carolina, learning backend web development including Python and Django, with the goal of creating elegant and useful web-based tools.</h6> <h6>I love cheese more than I should.</h6>
-        <h5 class="page-header">Backend Development Skills: </h5>
-        <div class="col s4">
-          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Python</h6>
-          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Django</h6>
-          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  RESTful APIs</h6>
-          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  HTML & CSS</h6>
-          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Java</h6>
-        </div>
-        <div class="col s6">
-          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Git-based Revision Control</h6>
-          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Object Oriented Programming</h6>
-          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Functional Programming</h6>
-          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Cloud Deployment with Heroku</h6>
-          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Witty Banter</h6>
-        </div>
-      </div>
-    </div>
-  </div>
+  <h5>I am a recent graduate of The Iron Yard in Greenville, SC, where I studied backend development,  including Python and Django, with the goal of creating elegant and useful web-based tools.</h5>
+  <h5>I’m experienced in backend web development, object-oriented and functional programming, and relational database integration.</h5>
+  <h5>In my previous life, I spent more than 15 years working in
+  maufacturing environments as both an engineer and a design manager.  As a result, I have a wealth of knowledge and
+  experience creating products in an organized, thoughful, and cost effective manner.</h5>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
 {% endblock %}
 {% block portfolio %}
-<div class="lime darken-3">
+<div class="blue-grey darken-1">
+  <img id="radio" src="{% static 'app/images/radio.jpg' %}" alt="Bill Gardner"></img>
 <div class="container">
-  <h4>What Things Do I Make:</h4>
+  I'm going to use Materialize Cards here:
+  <br>
+  <br>
     <img id="modalbutton" src="{% static 'app/images/driveshaft.jpg' %}" alt="" />
     <img id="modalbutton" src="{% static 'app/images/engine.jpg' %}" alt="" />
     <img id="modalbutton" src="{% static 'app/images/engineblock.jpg' %}" alt="" />
-        <!-- Modal Trigger -->
-        <a id="modalbutton" class="waves-effect waves-light btn modal-trigger" href="modal1">Subasmbly</a>
+    <!-- Modal Trigger -->
+    <a id="modalbutton" class="waves-effect waves-light btn modal-trigger" href="#modal1">Subasmbly</a>
     <!-- Modal Structure -->
     <div id="modal1" class="modal">
       <div class="modal-content">
@@ -54,11 +41,11 @@
         <p>A bunch of text</p>
       </div>
       <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
       </div>
     </div>
         <!-- Modal Trigger -->
-        <a id="modalbutton" class="waves-effect waves-light btn modal-trigger" href="modal2">Bill's List</a>
+        <a id="modalbutton" class="waves-effect waves-light btn modal-trigger" href="#modal2">Bill's List</a>
     <!-- Modal Structure -->
     <div id="modal2" class="modal">
       <div class="modal-content">
@@ -66,11 +53,11 @@
         <p>A bunch of text</p>
       </div>
       <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
       </div>
     </div>
         <!-- Modal Trigger -->
-        <a id="modalbutton" class="waves-effect waves-light btn modal-trigger" href="modal3">Bil.ly</a>
+        <a id="modalbutton" class="waves-effect waves-light btn modal-trigger" href="#modal3">Bil.ly</a>
     <!-- Modal Structure -->
     <div id="modal3" class="modal">
       <div class="modal-content">
@@ -78,41 +65,191 @@
         <p>A bunch of text</p>
       </div>
       <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
       </div>
     </div>
   </div>
+  <div class="container">
+    <br>
+    <br>
+      <img id="modalbutton" src="{% static 'app/images/driveshaft.jpg' %}" alt="" />
+      <img id="modalbutton" src="{% static 'app/images/engine.jpg' %}" alt="" />
+      <img id="modalbutton" src="{% static 'app/images/engineblock.jpg' %}" alt="" />
+      <!-- Modal Trigger -->
+      <a id="modalbutton" class="waves-effect waves-light btn modal-trigger" href="#modal4">Print Project</a>
+      <!-- Modal Structure -->
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+          <!-- Modal Trigger -->
+          <a id="modalbutton" class="waves-effect waves-light btn modal-trigger" href="#modal5">Web Project</a>
+      <!-- Modal Structure -->
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+          <!-- Modal Trigger -->
+          <a id="modalbutton" class="waves-effect waves-light btn modal-trigger" href="#modal6">Web Project 2</a>
+      <!-- Modal Structure -->
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+    </div>
   <br>
   <br>
   <br>
 </div>
 {% endblock %}
 {% block skills %}
+<img id="clock" src="{% static 'app/images/clock.jpg' %}" alt="Bill Gardner"></img>
   <div class="container">
     <div class="row">
-      <h4 class="page-header">How I Make The Things I Make: </h4>
-      <div class="col s4">
-        <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Python</h6>
-        <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Django</h6>
-        <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  RESTful APIs</h6>
-        <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  HTML & CSS</h6>
-        <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Java</h6>
+      <br>
+      <br>
+      <img id="brands" src="{% static 'app/images/python.png' %}" alt="Python Logo" />
+      <img id="brands" src="{% static 'app/images/django.png' %}" alt="Django Logo" />
+      <img id="brands" src="{% static 'app/images/rest.png' %}" alt="Restful Logo" />
+      <img id="brands" src="{% static 'app/images/html.png' %}" alt="HTML5 Logo" />
+      <img id="brands" src="{% static 'app/images/css.png' %}" alt="CSS3 Logo" />
+      <div id="skills" class="row">
+        <div class="col s4">
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Java</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  GitHub</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Object Oriented Programming</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Functional Programming</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Heroku</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  PostgreSQL</h6>
+        </div>
+        <div class="col s4">
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Bootstrap</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Materialize</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Adobe Photoshop</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Adobe Illustrator</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Adobe InDesign</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Adobe Acrobat</h6>
+        </div>
+        <div class="col s4">
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  ZSH</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Sublime Text</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  SolidWorks</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Rhinoceros 3D</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  AutoCAD</h6>
+          <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Google Sketchup</h6>
+        </div>
       </div>
-      <div class="col s6">
-        <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Git-based Revision Control</h6>
-        <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Object Oriented Programming</h6>
-        <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Functional Programming</h6>
-        <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Cloud Deployment with Heroku</h6>
-        <h6><i class="fa fa-circle-o" aria-hidden="true"></i>  Witty Banter</h6>
-      </div>
+      <br>
+      <br>
     </div>
+  </div>
+
+{% endblock %}
+{% block resume %}
+<div class="blue-grey darken-1">
+  <img id="barn" src="{% static 'app/images/barn.jpg' %}" alt="Bill Gardner"></img>
+  <div class="container">
+    <br>
+    <br>
+    <h3 class="white-text">resume:</h3>
+    <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">list</i>Technical Skills</div>
+      <div class="collapsible-body white">
+        <h6>Python Django HTML5 CSS3</h6>
+        <h6>Java Heroku Github RESTful APIs</h6>
+        <h6>Bootstrap Materialize PostgreSQL ZSH</h6>
+        <h6>Object Oriented Programming</h6>
+        <h6>Functional Programming</h6>
+        <h6>Photoshop Illustrator InDesign Acrobat</h6>
+        <h6>Solidworks Rhino3D AutoCAD Google Sketchup</h6></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">web</i>Web Experience</div>
+      <div class="collapsible-body white">
+        <h6>Childrens Health Board: Wordpress Website & Hosting Setup</h6>
+        <h6>Sunica.org: Wordpress Website & Hosting Setup</h6>
+        <h6>DC Design House: Wordpress Website, Hosting, Social Media</h6>
+        <h6>American Grilling Club: Wordpress Website & Branding</h6>
+        <h6>FutureCare Maryland: Existing Wordpress Website Maintenance</h6>
+        <h6>Lorenz Consulting LLC: Wordpress Website & Hosting Setup</h6>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">assignment</i>Education</div>
+      <div class="collapsible-body white"><h6>Python & Django Curriculum | The Iron Yard  | May – August 2016</h6>
+        <h6>B.S Industrial Design  |  Virginia Tech  |  May 2000, Cum Laude</h6></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">work</i>Recent Experience</div>
+      <div class="collapsible-body white">
+        <h6>Principal, 2011-2016</h6>
+        <h6>William John Gardner Design Studio, LLC</h6>
+        <h6>Furniture design and development startup focused on providing high</h6>
+        <h6>end custom designs to interior designers in the Washington, DC area.</h6>
+          <br>
+        <h6>Design Development Manager, 2007-2010</h6>
+        <h6>Niermann Weeks</h6>
+        <h6>Oversaw design department for respected furniture design and manufaccturer</h6>
+        <h6>with a catalog of over 600 designs.</h6></div>
+    </li>
+  </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+</div>
+{% endblock %}
+{% block contact %}
+<img id="clock" src="{% static 'app/images/train.jpg' %}" alt="Bill Gardner"></img>
+  <div class="container">
+    <div class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Contact Me</span>
+              <ul>
+                <li>(443) 340-5272</li>
+                <li><a href="mailto:bill@williamjgardner.com" target="blank">bill@williamjgardner.com</a></li>
+                <li><a href="http://www.williamjgardner.com" target="blank">www.williamjgardner.com</a></li>
+                <li><a href="http://www.github.com/williamjohngardner" target="blank">github.com/williamjohngardner</a></li>
+                <li><a href="https://www.linkedin.com/in/williamjohngardner" target="blank">linkedin.com/in/williamjohngardner</a></li>
+              </ul>
+            </div>
+            <div class="card-action">
+              <a href="mailto:bill@williamjgardner.com">Email Me</a>
+              <a href="http://www.github.com/williamjohngardner">My GitHub</a>
+              <a href="https://www.linkedin.com/in/williamjohngardner">My LinkedIn</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 {% endblock %}
 {% block extrascript %}
-  <script type="text/javascript">
-    $(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal-trigger').leanModal();
-    });>
-  </script>
+<script>
+$(document).ready(function() {
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+});
+</script>
 {% endblock %}

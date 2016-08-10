@@ -1,3 +1,6 @@
 *.pyc
 .env
 venv
+db.sqlite3
+scratch.html
+__pycache__w

@@ -7,9 +7,8 @@
 {% endblock %}
 {% block about %}
 <div class="container">
-  <br>
-  <br>
   <h2>BACKEND DEVELOPER</h2>
+  <hr>
   <p class="flow-text">I am a recent graduate of The Iron Yard in Greenville, SC, where I studied backend development,  including Python and Django, with the goal of creating elegant and useful web-based tools.</p>
   <p class="flow-text">I’m experienced in backend web development, object-oriented and functional programming, and relational database integration.</p>
   <p class="flow-text">I have previously spent more than 15 years working in
@@ -28,12 +27,14 @@
   <br>
   <br>
 <div class="container">
+  <h2 class="white-text">portfolio:</h2>
+  <hr>
     <div id="cardsmall" class="card medium">
       <div id="cardimage" class="card-image">
-        <img src="{% static 'app/images/driveshaft.jpg' %}" alt="" />
+        <img src="{% static 'app/images/subasmbly.jpg' %}" alt="subasmbly" />
       </div>
     <div class="card-content">
-      <p>Subasmbly: Online Revision Control</p>
+      <p>Subasmbly: Online Bill of Materials</p>
     </div>
       <div class="card-action">
         <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="#modal1">More Information</a>
@@ -42,22 +43,22 @@
     </div>
     <div id="cardsmall" class="card medium">
       <div class="card-image">
-        <img id="cardimage" src="{% static 'app/images/engine.jpg' %}" alt="" />
+        <img id="cardimage" src="{% static 'app/images/billslist.jpg' %}" alt="" />
       </div>
     <div class="card-content">
-      <p>Subasmbly: Online Revision Control</p>
+      <p>Bill's List, A Place for Things and Stuff</p>
     </div>
       <div class="card-action">
         <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="#modal2">More Information</a>
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="http://www.subasmbly.com" target="blank">Open Bill's List</a>
+        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="http://www.billslist.com" target="blank">Open Bill's List</a>
       </div>
     </div>
     <div id="cardsmall" class="card medium">
       <div class="card-image">
-        <img id="cardimage" src="{% static 'app/images/engineblock.jpg' %}" alt="" />
+        <img id="cardimage" src="{% static 'app/images/billy.jpg' %}" alt="" />
       </div>
     <div class="card-content">
-      <p>Subasmbly: Online Revision Control</p>
+      <p>Bil.ly - URL Shortener</p>
     </div>
       <div class="card-action">
         <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="#modal3">More Information</a>
@@ -170,6 +171,8 @@
 {% endblock %}
 {% block skills %}
   <div class="container">
+    <h2 class="black-text">skills:</h2>
+    <hr>
     <div class="row">
       <br>
       <br>
@@ -216,6 +219,8 @@
     <br>
     <br>
     <h2 class="white-text">resume:</h2>
+    <hr>
+    <br>
     <ul class="collapsible popout" data-collapsible="accordion">
     <li>
       <div class="collapsible-header flow-text"><i class="material-icons">list</i>Technical Skills</div>
@@ -272,6 +277,8 @@
 <div class="container">
   <div class="col s12 m7">
     <h2 class="header">contact me:</h2>
+    <hr>
+    <br>
     <div class="card horizontal blue-grey darken-1">
       <div class="card-image">
         <img src="{% static 'app/images/headshot.jpg' %}" alt="Bill Gardner Headshot" />

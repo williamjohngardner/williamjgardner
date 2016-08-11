@@ -1,3 +1,8 @@
+h2 {
+  font-family:Roboto;
+  font-weight: 200;
+}
+
 #modalbutton{
   display: inline-block;
   align-items: center;
@@ -27,4 +32,16 @@
 
 #btn{
   width: 200px;
+}
+
+#cardsmall{
+  display: inline-block;
+  align-items: center;
+  margin-left: 33px;
+  width: 300px
+}
+
+#cardbutton{
+  width: 260px;
+  margin-left: 20;
 }

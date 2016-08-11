@@ -7,17 +7,12 @@
 {% endblock %}
 {% block about %}
 <div class="container">
-  <h2>BACKEND DEVELOPER</h2>
+  <h2 class="center-align">BILL GARDNER &nbsp | &nbsp <small>BACKEND DEVELOPER</small></h2>
   <hr>
-  <p class="flow-text">I am a recent graduate of The Iron Yard in Greenville, SC, where I studied backend development,  including Python and Django, with the goal of creating elegant and useful web-based tools.</p>
-  <p class="flow-text">I’m experienced in backend web development, object-oriented and functional programming, and relational database integration.</p>
-  <p class="flow-text">I have previously spent more than 15 years working in
+  <p class="flow-text center-align">I am a recent graduate of The Iron Yard in Greenville, SC, where I studied backend development,  including Python and Django, with the goal of creating elegant and useful web-based tools.   I’m experienced in backend web development, object-oriented and functional programming, and relational database integration.</p>
+  <p class="flow-text center-align">I have previously spent more than 15 years working in
   maufacturing environments as both an engineer and a design manager.  As a result, I have a wealth of knowledge and
   experience creating products in an organized, thoughful, and cost effective manner.</p>
-  <br>
-  <br>
-  <br>
-  <br>
   <br>
   <br>
 </div>
@@ -29,9 +24,10 @@
 <div class="container">
   <h2 class="white-text">portfolio:</h2>
   <hr>
-    <div id="cardsmall" class="card medium">
-      <div id="cardimage" class="card-image">
-        <img src="{% static 'app/images/subasmbly.jpg' %}" alt="subasmbly" />
+  <br>
+    <div id="cardsmall1" class="card medium card-panel hoverable">
+      <div class="card-image">
+        <img class="materialboxed" src="{% static 'app/images/subasmbly.jpg' %}" alt="subasmbly" />
       </div>
     <div class="card-content">
       <p>Subasmbly: Online Bill of Materials</p>
@@ -41,9 +37,9 @@
         <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="http://www.subasmbly.com" target="blank">Open Subasmbly.com</a>
       </div>
     </div>
-    <div id="cardsmall" class="card medium">
+    <div id="cardsmall2" class="card medium card-panel hoverable">
       <div class="card-image">
-        <img id="cardimage" src="{% static 'app/images/billslist.jpg' %}" alt="" />
+        <img class="materialboxed" src="{% static 'app/images/billslist.jpg' %}" alt="" />
       </div>
     <div class="card-content">
       <p>Bill's List, A Place for Things and Stuff</p>
@@ -53,9 +49,9 @@
         <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="http://www.billslist.com" target="blank">Open Bill's List</a>
       </div>
     </div>
-    <div id="cardsmall" class="card medium">
+    <div id="cardsmall3" class="card medium card-panel hoverable">
       <div class="card-image">
-        <img id="cardimage" src="{% static 'app/images/billy.jpg' %}" alt="" />
+        <img class="materialboxed" src="{% static 'app/images/billy.jpg' %}" alt="" />
       </div>
     <div class="card-content">
       <p>Bil.ly - URL Shortener</p>
@@ -65,42 +61,8 @@
         <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="http://www.subasmbly.com" target="blank">Open Bil.ly</a>
       </div>
     </div>
-    <div id="cardsmall" class="card medium">
-      <div id="cardimage" class="card-image">
-        <img src="{% static 'app/images/driveshaft.jpg' %}" alt="" />
-      </div>
-    <div class="card-content">
-      <p>Subasmbly: Online Revision Control</p>
-    </div>
-      <div class="card-action">
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="#modal4">More Information</a>
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="http://www.subasmbly.com" target="blank">Open Subasmbly.com</a>
-      </div>
-    </div>
-    <div id="cardsmall" class="card medium">
-      <div class="card-image">
-        <img id="cardimage" src="{% static 'app/images/engine.jpg' %}" alt="" />
-      </div>
-    <div class="card-content">
-      <p>Subasmbly: Online Revision Control</p>
-    </div>
-      <div class="card-action">
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="#modal5">More Information</a>
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="http://www.subasmbly.com" target="blank">Open Bill's List</a>
-      </div>
-    </div>
-    <div id="cardsmall" class="card medium">
-      <div class="card-image">
-        <img id="cardimage" src="{% static 'app/images/engineblock.jpg' %}" alt="" />
-      </div>
-    <div class="card-content">
-      <p>Subasmbly: Online Revision Control</p>
-    </div>
-      <div class="card-action">
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="#modal6">More Information</a>
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="http://www.subasmbly.com" target="blank">Open Bil.ly</a>
-      </div>
-    </div>
+  <br>
+  <br>
   <br>
   <br>
     <!-- Modal Structure -->
@@ -134,40 +96,8 @@
       </div>
     </div>
   </div>
-  <div class="container">
-
-      <!-- Modal Structure -->
-      <div id="modal4" class="modal">
-        <div class="modal-content">
-          <h4>Modal Header</h4>
-          <p>A bunch of text</p>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-        </div>
-      </div>
-      <!-- Modal Structure -->
-      <div id="modal5" class="modal">
-        <div class="modal-content">
-          <h4>Modal Header</h4>
-          <p>A bunch of text</p>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-        </div>
-      </div>
-      <!-- Modal Structure -->
-      <div id="modal6" class="modal">
-        <div class="modal-content">
-          <h4>Modal Header</h4>
-          <p>A bunch of text</p>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-        </div>
-      </div>
-    </div>
 </div>
+
 {% endblock %}
 {% block skills %}
   <div class="container">
@@ -176,11 +106,11 @@
     <div class="row">
       <br>
       <br>
-      <img id="brands" src="{% static 'app/images/python.png' %}" alt="Python Logo" />
-      <img id="brands" src="{% static 'app/images/django.png' %}" alt="Django Logo" />
-      <img id="brands" src="{% static 'app/images/rest.png' %}" alt="Restful Logo" />
-      <img id="brands" src="{% static 'app/images/html.png' %}" alt="HTML5 Logo" />
-      <img id="brands" src="{% static 'app/images/css.png' %}" alt="CSS3 Logo" />
+      <img id="python" src="{% static 'app/images/python.png' %}" alt="Python Logo" />
+      <img id="django" src="{% static 'app/images/django.png' %}" alt="Django Logo" />
+      <img id="rest" src="{% static 'app/images/rest.png' %}" alt="Restful Logo" />
+      <img id="html" src="{% static 'app/images/html.png' %}" alt="HTML5 Logo" />
+      <img id="css" src="{% static 'app/images/css.png' %}" alt="CSS3 Logo" />
       <div id="skills" class="row">
         <div class="col s4">
           <h6 class="flow-text">Java</h6>
@@ -211,12 +141,10 @@
       <br>
     </div>
   </div>
-
 {% endblock %}
 {% block resume %}
   <div class="blue-grey darken-1">
   <div class="container">
-    <br>
     <br>
     <h2 class="white-text">resume:</h2>
     <hr>
@@ -225,48 +153,94 @@
     <li>
       <div class="collapsible-header flow-text"><i class="material-icons">list</i>Technical Skills</div>
       <div class="collapsible-body white">
-        <h6 class="flow-text">Python Django HTML5 CSS3</h6>
-        <h6 class="flow-text">Java Heroku Github RESTful APIs</h6>
-        <h6 class="flow-text">Bootstrap Materialize PostgreSQL ZSH</h6>
-        <h6 class="flow-text">Object Oriented Programming</h6>
-        <h6 class="flow-text">Functional Programming</h6>
-        <h6 class="flow-text">Photoshop Illustrator InDesign Acrobat</h6>
-        <h6 class="flow-text">Solidworks Rhino3D AutoCAD Google Sketchup</h6></div>
+        <div class="container">
+          <table>
+            <tr>
+              <td class="flow-text">Python</td>
+              <td class="flow-text">Django</td>
+              <td class="flow-text">HTML5</td>
+              <td class="flow-text">CSS3</td>
+            </tr>
+            <tr>
+              <td class="flow-text">Java</td>
+              <td class="flow-text">Heroku</td>
+              <td class="flow-text">Github</td>
+              <td class="flow-text"><small>PostgreSQL</small></td>
+            </tr>
+            <tr>
+              <td class="flow-text">Bootstrap</td>
+              <td class="flow-text">Materialize</td>
+              <td class="flow-text">ZSH</td>
+            </tr>
+            <tr>
+              <td class="flow-text">Photoshop</td>
+              <td class="flow-text">Illustrator</td>
+              <td class="flow-text">InDesign</td>
+              <td class="flow-text">Acrobat</td>
+            </tr>
+            <tr>
+              <td class="flow-text">Solidworks</td>
+              <td class="flow-text">Rhino3D</td>
+              <td class="flow-text">AutoCAD</td>
+            </tr>
+            <tr>
+              <td class="flow-text"><small>Object Oriented Programming</small></td>
+              <td class="flow-text"><small>Functional Programming</small></td>
+              <td class="flow-text"><small>RESTful APIs</small></td>
+              <td class="flow-text"><small>Google Sketchup</small></td>
+            </tr>
+          </table>
+        </div>
     </li>
     <li>
       <div class="collapsible-header flow-text"><i class="material-icons">web</i>Web Experience</div>
       <div class="collapsible-body white">
-        <h6>Childrens Health Board: Wordpress Website & Hosting Setup</h6>
-        <h6>Sunica.org: Wordpress Website & Hosting Setup</h6>
-        <h6>DC Design House: Wordpress Website, Hosting, Social Media</h6>
-        <h6>American Grilling Club: Wordpress Website & Branding</h6>
-        <h6>FutureCare Maryland: Existing Wordpress Website Maintenance</h6>
-        <h6>Lorenz Consulting LLC: Wordpress Website & Hosting Setup</h6>
+        <div class="container">
+          <br>
+          <ul>
+            <li class="flow-text">Childrens Health Board: <small>Wordpress Website & Hosting Setup</small></li>
+            <li class="flow-text">Sunica.org: <small>Wordpress Website & Hosting Setup</small></li>
+            <li class="flow-text">DC Design House: <small>Wordpress Website, Hosting, Social Media</small></li>
+            <li class="flow-text">American Grilling Club: <small>Wordpress Website & Branding</small></li>
+            <li class="flow-text">FutureCare Maryland: <small>Existing Wordpress Website Maintenance</small></li>
+            <li class="flow-text">Lorenz Consulting LLC: <small>Wordpress Website & Hosting Setup</small></li>
+          </ul>
+          <br>
+        </div>
       </div>
     </li>
     <li>
       <div class="collapsible-header flow-text"><i class="material-icons">assignment</i>Education</div>
-      <div class="collapsible-body white"><h6>Python & Django Curriculum | The Iron Yard  | May – August 2016</h6>
-        <h6>B.S Industrial Design  |  Virginia Tech  |  May 2000, Cum Laude</h6></div>
+      <div class="collapsible-body white">
+        <div class="container">
+          <table>
+            <tr>
+              <td><h6 class="flow-text">Python & Django Curriculum</h6></td>
+              <td><h6 class="flow-text">The Iron Yard</h6></td>
+              <td><h6 class="flow-text">May – August 2016</h6></td>
+            </tr>
+            <tr>
+              <td><h6 class="flow-text">B.S Industrial Design</h6></td>
+              <td><h6 class="flow-text">Virginia Tech</h6></td>
+              <td><h6 class="flow-text">May 2000, Cum Laude</h6></td>
+            </tr>
+          </table>
+        </div>
     </li>
     <li>
       <div class="collapsible-header flow-text"><i class="material-icons">work</i>Recent Experience</div>
       <div class="collapsible-body white">
-        <h6>Principal, 2011-2016</h6>
-        <h6>William John Gardner Design Studio, LLC</h6>
-        <h6>Furniture design and development startup focused on providing high</h6>
-        <h6>end custom designs to interior designers in the Washington, DC area.</h6>
-          <br>
-        <h6>Design Development Manager, 2007-2010</h6>
-        <h6>Niermann Weeks</h6>
-        <h6>Oversaw design department for respected furniture design and manufaccturer</h6>
-        <h6>with a catalog of over 600 designs.</h6></div>
+        <div class="container">
+          <h5>Principal, 2011-2016</h5>
+          <h5>William John Gardner Design Studio, LLC</h5>
+          <h6>Furniture design and development startup focused on providing high end custom designs to interior designers in the Washington, DC area.</h6>
+            <br>
+          <h5>Design Development Manager, 2007-2010</h5>
+          <h5>Niermann Weeks</h5>
+          <h6>Oversaw design department for respected furniture design and manufacturer with a catalog of over 600 designs.</h6></div>
+        </div>
     </li>
   </ul>
-    <br>
-    <br>
-    <br>
-    <br>
     <br>
     <br>
   </div>
@@ -287,17 +261,14 @@
         <div class="card-content">
           <span class="card-title"></span>
           <ul>
-            <li class="white-text flow-text">(443) 340-5272</li>
-            <li><a href="mailto:bill@williamjgardner.com" target="blank">bill@williamjgardner.com</a></li>
-            <li><a href="http://www.williamjgardner.com" target="blank">www.williamjgardner.com</a></li>
-            <li><a href="http://www.github.com/williamjohngardner" target="blank">github.com/williamjohngardner</a></li>
-            <li><a href="https://www.linkedin.com/in/williamjohngardner" target="blank">linkedin.com/in/williamjohngardner</a></li>
+            <li> Do I need some kind of personal statement here?</li>
           </ul>
         </div>
         <div class="card-action">
-          <a href="mailto:bill@williamjgardner.com">Email Me</a>
-          <a href="http://www.github.com/williamjohngardner">My GitHub</a>
-          <a href="https://www.linkedin.com/in/williamjohngardner">My LinkedIn</a>
+          <a href="mailto:bill@williamjgardner.com"><i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i></a>
+          <a href="http://www.github.com/williamjohngardner" target="blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/williamjohngardner" target="blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+          <a href="http://www.twitter.com/williamjgardner" target="blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></i></a>
         </div>
       </div>
     </div>

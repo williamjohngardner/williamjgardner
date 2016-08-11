@@ -10,11 +10,21 @@ h2 {
   margin-left: 50px;
 }
 
-#brands{
-  padding-top: 20px;
+#python, #django, #rest, #html, #css{
   display: inline-block;
   align-items: center;
-  margin-left: 40px;
+}
+
+#python{
+  float: left;
+}
+
+#django, #rest, #html{
+  margin-left: 6.25%;
+}
+
+#css{
+  float: right;
 }
 
 #skills{
@@ -31,14 +41,25 @@ h2 {
 }
 
 #btn{
-  width: 200px;
+  width: 150px;
 }
 
-#cardsmall{
+#cardsmall1, #cardsmall2, #cardsmall3{
   display: inline-block;
-  align-items: center;
-  margin-left: 33px;
   width: 300px
+}
+
+#cardsmall1{
+  float: left;
+}
+
+#cardsmall2{
+  margin-left: 5.25%;
+  margin-right: 5.25%;
+}
+
+#cardsmall3{
+  float: right;
 }
 
 #cardbutton{

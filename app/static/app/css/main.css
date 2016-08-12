@@ -66,3 +66,12 @@ h2 {
   width: 260px;
   margin-left: 20;
 }
+
+#resumebutton{
+  margin-left: 24px;
+  width: 465px;
+}
+
+#skillsbtn{
+  background-color: red;
+}

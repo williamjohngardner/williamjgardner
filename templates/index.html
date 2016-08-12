@@ -3,7 +3,9 @@
 
 
 {% block introcontent %}
-  <img id="gears" src="{% static 'app/images/gears.jpg' %}" alt="Bill Gardner"></img>
+<div id="about">
+  <img id="gears" src="{% static 'app/images/gears.jpg' %}" class="z-depth-3" alt="Bill Gardner"></img>
+</div>
 {% endblock %}
 {% block about %}
 <div class="container">
@@ -11,21 +13,21 @@
   <hr>
   <p class="flow-text center-align">I am a recent graduate of The Iron Yard in Greenville, SC, where I studied backend development,  including Python and Django, with the goal of creating elegant and useful web-based tools.   I’m experienced in backend web development, object-oriented and functional programming, and relational database integration.</p>
   <p class="flow-text center-align">I have previously spent more than 15 years working in
-  maufacturing environments as both an engineer and a design manager.  As a result, I have a wealth of knowledge and
-  experience creating products in an organized, thoughful, and cost effective manner.</p>
+  manufacturing environments as both an engineer and a design manager.  As a result, I have a wealth of knowledge and
+  experience creating products in an organized, thoughtful, and cost-effective manner.</p>
   <br>
   <br>
 </div>
 {% endblock %}
 {% block portfolio %}
-<div class="blue-grey darken-1">
+<div id="portfolio" class="blue-grey darken-1 z-depth-3">
   <br>
   <br>
 <div class="container">
   <h2 class="white-text">portfolio:</h2>
   <hr>
   <br>
-    <div id="cardsmall1" class="card medium card-panel hoverable">
+    <div id="cardsmall1" class="card medium card-panel hoverable z-depth-5">
       <div class="card-image">
         <img class="materialboxed" src="{% static 'app/images/subasmbly.jpg' %}" alt="subasmbly" />
       </div>
@@ -37,7 +39,7 @@
         <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="http://www.subasmbly.com" target="blank">Open Subasmbly.com</a>
       </div>
     </div>
-    <div id="cardsmall2" class="card medium card-panel hoverable">
+    <div id="cardsmall2" class="card medium card-panel hoverable z-depth-5">
       <div class="card-image">
         <img class="materialboxed" src="{% static 'app/images/billslist.jpg' %}" alt="" />
       </div>
@@ -49,7 +51,7 @@
         <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="http://www.billslist.com" target="blank">Open Bill's List</a>
       </div>
     </div>
-    <div id="cardsmall3" class="card medium card-panel hoverable">
+    <div id="cardsmall3" class="card medium card-panel hoverable z-depth-5">
       <div class="card-image">
         <img class="materialboxed" src="{% static 'app/images/billy.jpg' %}" alt="" />
       </div>
@@ -97,9 +99,12 @@
     </div>
   </div>
 </div>
-
 {% endblock %}
 {% block skills %}
+<div id="tools">
+  <br>
+  <br>
+  <br>
   <div class="container">
     <h2 class="black-text">skills:</h2>
     <hr>
@@ -113,38 +118,40 @@
       <img id="css" src="{% static 'app/images/css.png' %}" alt="CSS3 Logo" />
       <div id="skills" class="row">
         <div class="col s4">
-          <h6 class="flow-text">Java</h6>
-          <h6 class="flow-text">GitHub</h6>
-          <h6 class="flow-text">Object Oriented Programming</h6>
-          <h6 class="flow-text">Functional Programming</h6>
-          <h6 class="flow-text">Heroku</h6>
-          <h6 class="flow-text">PostgreSQL</h6>
+          <h6 class="btn-flat disabled">Java</h6><br>
+          <h6 class="btn-flat disabled">GitHub</h6><br>
+          <h6 class="btn-flat disabled">Object Oriented Programming</h6><br>
+          <h6 class="btn-flat disabled">Functional Programming</h6><br>
+          <h6 class="btn-flat disabled">Heroku</h6><br>
+          <h6 class="btn-flat disabled">PostgreSQL</h6><br>
         </div>
         <div class="col s4">
-          <h6 class="flow-text">Bootstrap</h6>
-          <h6 class="flow-text">Materialize</h6>
-          <h6 class="flow-text">Adobe Photoshop</h6>
-          <h6 class="flow-text">Adobe Illustrator</h6>
-          <h6 class="flow-text">Adobe InDesign</h6>
-          <h6 class="flow-text">Adobe Acrobat</h6>
+          <h6 class="btn-flat disabled">Bootstrap</h6><br>
+          <h6 class="btn-flat disabled">Materialize</h6><br>
+          <h6 class="btn-flat disabled">Adobe Photoshop</h6><br>
+          <h6 class="btn-flat disabled">Adobe Illustrator</h6><br>
+          <h6 class="btn-flat disabled">Adobe InDesign</h6><br>
+          <h6 class="btn-flat disabled">Adobe Acrobat</h6><br>
         </div>
         <div class="col s4">
-          <h6 class="flow-text">ZSH</h6>
-          <h6 class="flow-text">Sublime Text</h6>
-          <h6 class="flow-text">SolidWorks</h6>
-          <h6 class="flow-text">Rhinoceros 3D</h6>
-          <h6 class="flow-text">AutoCAD</h6>
-          <h6 class="flow-text">Google Sketchup</h6>
+          <h6 class="btn-flat disabled">ZSH</h6><br>
+          <h6 class="btn-flat disabled">Sublime Text</h6><br>
+          <h6 class="btn-flat disabled">SolidWorks</h6><br>
+          <h6 class="btn-flat disabled">Rhinoceros 3D</h6><br>
+          <h6 class="btn-flat disabled">AutoCAD</h6><br>
+          <h6 class="btn-flat disabled">Google Sketchup</h6><br>
         </div>
       </div>
       <br>
       <br>
     </div>
   </div>
+</div>
 {% endblock %}
 {% block resume %}
-  <div class="blue-grey darken-1">
+<div id="resume" class="blue-grey darken-1 z-depth-3">
   <div class="container">
+    <br>
     <br>
     <h2 class="white-text">resume:</h2>
     <hr>
@@ -193,23 +200,6 @@
         </div>
     </li>
     <li>
-      <div class="collapsible-header flow-text"><i class="material-icons">web</i>Web Experience</div>
-      <div class="collapsible-body white">
-        <div class="container">
-          <br>
-          <ul>
-            <li class="flow-text">Childrens Health Board: <small>Wordpress Website & Hosting Setup</small></li>
-            <li class="flow-text">Sunica.org: <small>Wordpress Website & Hosting Setup</small></li>
-            <li class="flow-text">DC Design House: <small>Wordpress Website, Hosting, Social Media</small></li>
-            <li class="flow-text">American Grilling Club: <small>Wordpress Website & Branding</small></li>
-            <li class="flow-text">FutureCare Maryland: <small>Existing Wordpress Website Maintenance</small></li>
-            <li class="flow-text">Lorenz Consulting LLC: <small>Wordpress Website & Hosting Setup</small></li>
-          </ul>
-          <br>
-        </div>
-      </div>
-    </li>
-    <li>
       <div class="collapsible-header flow-text"><i class="material-icons">assignment</i>Education</div>
       <div class="collapsible-body white">
         <div class="container">
@@ -228,6 +218,24 @@
         </div>
     </li>
     <li>
+      <div class="collapsible-header flow-text"><i class="material-icons">web</i>Web Experience</div>
+      <div class="collapsible-body white">
+        <div class="container">
+          <br>
+          <ul>
+            <li class="flow-text">Childrens Health Board: <small>Wordpress Website & Hosting Setup</small></li>
+            <li class="flow-text">Sunica.org: <small>Wordpress Website & Hosting Setup</small></li>
+            <li class="flow-text">DC Design House: <small>Wordpress Website, Hosting, Social Media</small></li>
+            <li class="flow-text">American Grilling Club: <small>Wordpress Website & Branding</small></li>
+            <li class="flow-text">FutureCare Maryland: <small>Existing Wordpress Website Maintenance</small></li>
+            <li class="flow-text">Lorenz Consulting LLC: <small>Wordpress Website & Hosting Setup</small></li>
+          </ul>
+          <br>
+        </div>
+      </div>
+    </li>
+
+    <li>
       <div class="collapsible-header flow-text"><i class="material-icons">work</i>Recent Experience</div>
       <div class="collapsible-body white">
         <div class="container">
@@ -241,19 +249,24 @@
         </div>
     </li>
   </ul>
+    <a id="resumebutton" class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" target="blank">Click to View My Resume</a>
+    <a id="resumebutton" class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" download>Click to Download My Resume in .pdf Formatting</a>
+    <br>
     <br>
     <br>
   </div>
 </div>
 {% endblock %}
 {% block contact %}
-<br>
-<div class="container">
+<div id="contact">
+  <br>
+  <br>
+  <div class="container">
   <div class="col s12 m7">
     <h2 class="header">contact me:</h2>
     <hr>
     <br>
-    <div class="card horizontal blue-grey darken-1">
+    <div class="card horizontal blue-grey darken-1 z-depth-4">
       <div class="card-image">
         <img src="{% static 'app/images/headshot.jpg' %}" alt="Bill Gardner Headshot" />
       </div>
@@ -268,7 +281,7 @@
           <a href="mailto:bill@williamjgardner.com"><i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i></a>
           <a href="http://www.github.com/williamjohngardner" target="blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
           <a href="https://www.linkedin.com/in/williamjohngardner" target="blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-          <a href="http://www.twitter.com/williamjgardner" target="blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></i></a>
+          <a href="http://www.twitter.com/williamjgardner" target="blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -276,12 +289,14 @@
 </div>
 <br>
 <br>
+</div>
 {% endblock %}
 {% block extrascript %}
 <script>
 $(document).ready(function() {
   // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
   $('.modal-trigger').leanModal();
+  $(".button-collapse").sideNav();
 });
 </script>
 {% endblock %}

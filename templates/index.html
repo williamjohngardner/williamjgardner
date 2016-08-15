@@ -4,8 +4,8 @@
 
 {% block introcontent %}
 <div id="about">
-  <img id="gears" src="{% static 'app/images/gears.jpg' %}" class="z-depth-3 hide-on-med-and-down" alt="Bill Gardner"></img>
-  <img id="gears" src="{% static 'app/images/gears_md.jpg' %}" class="z-depth-3 hide-on-small-only hide-on-large-only" alt="Bill Gardner"></img>
+  <img src="{% static 'app/images/gears.jpg' %}" class="z-depth-3 hide-on-med-and-down" alt="Bill Gardner"></img>
+  <img src="{% static 'app/images/gears_md.jpg' %}" class="z-depth-3 hide-on-small-only hide-on-large-only" alt="Bill Gardner"></img>
 </div>
 {% endblock %}
 {% block about %}
@@ -370,9 +370,26 @@
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <span class="card-title"></span>
-            <p class="flow-text white-text"><small>I've spent the last 20 years designing and engineering mass transit vehicles and furniture.  While that may sound like a dichotomy, I've found that designing heavy equipment, chairs and tables, and web applications are largely similar and require many of the same skills. Please feel free to contact me at the links below!</small></p>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col s12 m12 l4">
+                <p class="white-text">A Little About Me:</p>
+                <p class="white-text"><small>While new to coding, I have been making things for as long as I've been big enough to hold a hammer.</small></p>
             </div>
+            <div class="col s12 m12 l4">
+                <p class="white-text"><small>I have studied both architecture and product design and have a complete fixation on mid-century furniture and designs.</small></p>
+            </div>
+            <div class="col s12 m12 l4">
+              <p class="white-text"><small>I have owned my own furniture design studio and have had some of my designs published in magazines and blogs. <br><a href="http://www.williamjohngardner.com" target="blank">Click Here</a> to see my furniture portfolio.</small></p>
+            </div>
+            <div class="row divider"
+            <div class="row">
+              <div class="col s12 m12 l4">
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="card-action">
           <a href="mailto:bill@williamjgardner.com"><i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i></a>
           <a href="http://www.github.com/williamjohngardner" target="blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>

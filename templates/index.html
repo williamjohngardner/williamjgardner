@@ -27,42 +27,50 @@
   <h2 class="white-text">portfolio:</h2>
   <hr>
   <br>
-    <div id="cardsmall1" class="card medium card-panel hoverable z-depth-5">
-      <div class="card-image">
-        <img class="materialboxed" src="{% static 'app/images/subasmbly.jpg' %}" alt="subasmbly" />
+  <div class="row">
+      <div class="col s12 m12 l4">
+        <div class="card medium card-panel hoverable z-depth-5">
+          <div class="card-image">
+            <img class="materialboxed" src="{% static 'app/images/subasmbly.jpg' %}" alt="subasmbly" />
+          </div>
+        <div class="card-content">
+          <p>Subasmbly: Online Bill of Materials</p>
+        </div>
+          <div class="card-action">
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Information</a>
+            <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="http://www.subasmbly.com" target="blank">Open Subasmbly.com</a>
+          </div>
+        </div>
       </div>
-    <div class="card-content">
-      <p>Subasmbly: Online Bill of Materials</p>
-    </div>
-      <div class="card-action">
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="#modal1">More Information</a>
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger z-depth-2" href="http://www.subasmbly.com" target="blank">Open Subasmbly.com</a>
+      <div class="col s12 m12 l4">
+        <div class="card medium card-panel hoverable z-depth-5">
+          <div class="card-image">
+            <img class="materialboxed" src="{% static 'app/images/billslist.jpg' %}" alt="" />
+          </div>
+        <div class="card-content">
+          <p>Bill's List, A Place for Things and Stuff</p>
+        </div>
+          <div class="card-action">
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal2">More Information</a>
+            <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billslist.herokuapp.com/" target="blank">Open Bill's List</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div id="cardsmall2" class="card medium card-panel hoverable z-depth-5">
-      <div class="card-image">
-        <img class="materialboxed" src="{% static 'app/images/billslist.jpg' %}" alt="" />
-      </div>
-    <div class="card-content">
-      <p>Bill's List, A Place for Things and Stuff</p>
-    </div>
-      <div class="card-action">
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="#modal2">More Information</a>
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billslist.herokuapp.com/" target="blank">Open Bill's List</a>
-      </div>
-    </div>
-    <div id="cardsmall3" class="card medium card-panel hoverable z-depth-5">
-      <div class="card-image">
-        <img class="materialboxed" src="{% static 'app/images/billy.jpg' %}" alt="" />
-      </div>
-    <div class="card-content">
-      <p>Bil.ly - URL Shortener</p>
-    </div>
-      <div class="card-action">
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger" href="#modal3">More Information</a>
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billdotly.herokuapp.com/" target="blank">Open bil.ly</a>
-      </div>
-    </div>
+      <div class="col s12 m12 l4">
+        <div class="card medium card-panel hoverable z-depth-5">
+          <div class="card-image">
+            <img class="materialboxed" src="{% static 'app/images/billy.jpg' %}" alt="" />
+          </div>
+        <div class="card-content">
+          <p>Bil.ly - URL Shortener</p>
+        </div>
+          <div class="card-action">
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal3">More Information</a>
+            <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billdotly.herokuapp.com/" target="blank">Open bil.ly</a>
+          </div>
+        </div>
+        </div>
+  </div>
   <br>
   <br>
   <br>
@@ -75,7 +83,7 @@
         <p class="flow-text">Technologies used: Python, Django, Highton API Module, Heroku</p>
       </div>
       <div class="modal-footer">
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger z-depth-2" href="http://www.subasmbly.com" target="blank">Open Subasmbly.com</a>
+        <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="http://www.subasmbly.com" target="blank">Open Subasmbly.com</a>
         <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
       </div>
     </div>
@@ -88,7 +96,7 @@
         <p class="flow-text">Technologies used: Python, Django, Django REST Framework, Heroku</p>
       </div>
       <div class="modal-footer">
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billslist.herokuapp.com/" target="blank">Open Bill's List</a>
+        <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billslist.herokuapp.com/" target="blank">Open Bill's List</a>
         <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
       </div>
     </div>
@@ -100,7 +108,7 @@
         <p class="flow-text">Technologies used: Python, Django, HashIDs, Heroku</p>
       </div>
       <div class="modal-footer">
-        <a id="cardbutton" class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billdotly.herokuapp.com/" target="blank">Open Bil.ly</a>
+        <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billdotly.herokuapp.com/" target="blank">Open Bil.ly</a>
         <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
       </div>
     </div>
@@ -118,13 +126,22 @@
     <div class="row">
       <br>
       <br>
-      <img id="python" src="{% static 'app/images/python.png' %}" alt="Python Logo" />
-      <img id="django" src="{% static 'app/images/django.png' %}" alt="Django Logo" />
-      <img id="rest" src="{% static 'app/images/rest.png' %}" alt="Restful Logo" />
-      <img id="html" src="{% static 'app/images/html.png' %}" alt="HTML5 Logo" />
-      <img id="css" src="{% static 'app/images/css.png' %}" alt="CSS3 Logo" />
-      <div id="skills" class="row">
-        <div class="col s4">
+      <div class="row">
+        <div class="col s12 m12 l3">
+          <img src="{% static 'app/images/python.png' %}" alt="Python Logo" />
+        </div>
+        <div class="col s12 m12 l3">
+          <img src="{% static 'app/images/django.png' %}" alt="Django Logo" />
+        </div>
+        <div class="col s12 m12 l3 right-align">
+          <img src="{% static 'app/images/rest.png' %}" alt="Restful Logo" />
+        </div>
+        <div class="col s12 m12 l3 right-align">
+          <img src="{% static 'app/images/htmlcss.png' %}" alt="HTML5 CSS3 Logo" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l4 left-align">
           <h6 class="btn-flat disabled">Java</h6><br>
           <h6 class="btn-flat disabled">GitHub</h6><br>
           <h6 class="btn-flat disabled">Object Oriented Programming</h6><br>
@@ -132,7 +149,7 @@
           <h6 class="btn-flat disabled">Heroku</h6><br>
           <h6 class="btn-flat disabled">PostgreSQL</h6><br>
         </div>
-        <div class="col s4">
+        <div class="col s12 m12 l4 center-align">
           <h6 class="btn-flat disabled">Bootstrap</h6><br>
           <h6 class="btn-flat disabled">Materialize</h6><br>
           <h6 class="btn-flat disabled">Adobe Photoshop</h6><br>
@@ -140,7 +157,7 @@
           <h6 class="btn-flat disabled">Adobe InDesign</h6><br>
           <h6 class="btn-flat disabled">Adobe Acrobat</h6><br>
         </div>
-        <div class="col s4">
+        <div class="col s12 m12 l4 right-align">
           <h6 class="btn-flat disabled">ZSH</h6><br>
           <h6 class="btn-flat disabled">Sublime Text</h6><br>
           <h6 class="btn-flat disabled">SolidWorks</h6><br>

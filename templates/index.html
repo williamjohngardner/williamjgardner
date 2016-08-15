@@ -120,28 +120,28 @@
   <br>
   <br>
   <br>
-  <div class="container">
+  <div class="container hide-on-med-and-down">
     <h2 class="black-text">skills:</h2>
     <hr>
     <div class="row">
       <br>
       <br>
       <div class="row">
-        <div class="col s12 m12 l3">
+        <div class="col l3">
           <img src="{% static 'app/images/python.png' %}" alt="Python Logo" />
         </div>
-        <div class="col s12 m12 l3">
+        <div class="col l3">
           <img src="{% static 'app/images/django.png' %}" alt="Django Logo" />
         </div>
-        <div class="col s12 m12 l3 right-align">
+        <div class="col l3 right-align">
           <img src="{% static 'app/images/rest.png' %}" alt="Restful Logo" />
         </div>
-        <div class="col s12 m12 l3 right-align">
+        <div class="col l3 right-align">
           <img src="{% static 'app/images/htmlcss.png' %}" alt="HTML5 CSS3 Logo" />
         </div>
       </div>
       <div class="row">
-        <div class="col s12 m12 l4 left-align">
+        <div class="col l4 left-align">
           <h6 class="btn-flat disabled">Java</h6><br>
           <h6 class="btn-flat disabled">GitHub</h6><br>
           <h6 class="btn-flat disabled">Object Oriented Programming</h6><br>
@@ -149,7 +149,7 @@
           <h6 class="btn-flat disabled">Heroku</h6><br>
           <h6 class="btn-flat disabled">PostgreSQL</h6><br>
         </div>
-        <div class="col s12 m12 l4 center-align">
+        <div class="col l4 center-align">
           <h6 class="btn-flat disabled">Bootstrap</h6><br>
           <h6 class="btn-flat disabled">Materialize</h6><br>
           <h6 class="btn-flat disabled">Adobe Photoshop</h6><br>
@@ -157,7 +157,60 @@
           <h6 class="btn-flat disabled">Adobe InDesign</h6><br>
           <h6 class="btn-flat disabled">Adobe Acrobat</h6><br>
         </div>
-        <div class="col s12 m12 l4 right-align">
+        <div class="col l4 right-align">
+          <h6 class="btn-flat disabled">ZSH</h6><br>
+          <h6 class="btn-flat disabled">Sublime Text</h6><br>
+          <h6 class="btn-flat disabled">SolidWorks</h6><br>
+          <h6 class="btn-flat disabled">Rhinoceros 3D</h6><br>
+          <h6 class="btn-flat disabled">AutoCAD</h6><br>
+          <h6 class="btn-flat disabled">Google Sketchup</h6><br>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="container hide-on-large-only">
+    <h2 class="black-text">skills:</h2>
+    <hr>
+    <div class="row">
+      <br>
+      <br>
+      <div class="row">
+        <div class="col s12 m12 center-align">
+          <img src="{% static 'app/images/python.png' %}" alt="Python Logo" />
+        </div>
+        <div class="col s12 m12 center-align">
+          <img src="{% static 'app/images/django.png' %}" alt="Django Logo" />
+        </div>
+        <div class="col s12 m12 center-align">
+          <img src="{% static 'app/images/rest.png' %}" alt="Restful Logo" />
+        </div>
+        <div class="col s12 m12 center-align">
+          <img src="{% static 'app/images/htmlcss.png' %}" alt="HTML5 CSS3 Logo" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 center-align">
+          <h6 class="btn-flat disabled">Java</h6><br>
+          <h6 class="btn-flat disabled">GitHub</h6><br>
+          <h6 class="btn-flat disabled">Object Oriented Programming</h6><br>
+          <h6 class="btn-flat disabled">Functional Programming</h6><br>
+          <h6 class="btn-flat disabled">Heroku</h6><br>
+          <h6 class="btn-flat disabled">PostgreSQL</h6><br>
+        </div>
+        <div class="col s12 m12 center-align">
+          <h6 class="btn-flat disabled">Bootstrap</h6><br>
+          <h6 class="btn-flat disabled">Materialize</h6><br>
+          <h6 class="btn-flat disabled">Adobe Photoshop</h6><br>
+          <h6 class="btn-flat disabled">Adobe Illustrator</h6><br>
+          <h6 class="btn-flat disabled">Adobe InDesign</h6><br>
+          <h6 class="btn-flat disabled">Adobe Acrobat</h6><br>
+        </div>
+        <div class="col s12 m12 center-align">
           <h6 class="btn-flat disabled">ZSH</h6><br>
           <h6 class="btn-flat disabled">Sublime Text</h6><br>
           <h6 class="btn-flat disabled">SolidWorks</h6><br>
@@ -274,8 +327,20 @@
         </div>
     </li>
   </ul>
-    <a id="resumebutton" class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" target="blank">Click to View My Resume</a>
-    <a id="resumebutton" class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" download>Click to Download My Resume in .pdf Formatting</a>
+  <div class="row hide-on-med-and-down">
+    <div class="col l6">
+      <a class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" target="blank">Click to View My Resume</a>
+    </div>
+    <div class="col l6 right-align">
+      <a class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" download>Click to Download My Resume in .pdf Formatting</a>
+    </div>
+  </div>
+  <div class="row hide-on-large-only">
+    <div class="col s12 m12 center-align">
+      <a class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" target="blank">Click to View My Resume</a>
+      <a class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" download>Click to Download My Resume in .pdf Formatting</a>
+    </div>
+  </div>
     <br>
     <br>
     <br>
@@ -295,7 +360,6 @@
   <br>
   <br>
   <div class="container">
-  <div class="col s12 m7">
     <h2 class="header">contact me:</h2>
     <hr>
     <br>
@@ -306,7 +370,7 @@
       <div class="card-stacked">
         <div class="card-content">
           <span class="card-title"></span>
-            <p class="flow-text white-text"><small>I've spend the last 20 years designing and engineering mass transit vehicles and furniture.  While that may sound like a dichotomy, I've found that designing heavy equipment, chairs and tables, and web applications are largely similar and require many of the same skills. Please feel free to contact me at the links below!</small></p>
+            <p class="flow-text white-text"><small>I've spent the last 20 years designing and engineering mass transit vehicles and furniture.  While that may sound like a dichotomy, I've found that designing heavy equipment, chairs and tables, and web applications are largely similar and require many of the same skills. Please feel free to contact me at the links below!</small></p>
             </div>
         <div class="card-action">
           <a href="mailto:bill@williamjgardner.com"><i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i></a>
@@ -315,7 +379,6 @@
           <a href="http://www.twitter.com/williamjgardner" target="blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
         </div>
       </div>
-    </div>
   </div>
 </div>
 <br>

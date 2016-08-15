@@ -31,7 +31,7 @@ h2 {
   padding-top: 20px;
   display: inline-block;
   align-items: center;
-  width: 1300px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -46,7 +46,7 @@ h2 {
 
 #cardsmall1, #cardsmall2, #cardsmall3{
   display: inline-block;
-  width: 300px
+  width: 30%;
 }
 
 #cardsmall1{
@@ -54,8 +54,8 @@ h2 {
 }
 
 #cardsmall2{
-  margin-left: 5.25%;
-  margin-right: 5.25%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #cardsmall3{
@@ -63,16 +63,12 @@ h2 {
 }
 
 #cardbutton{
-  width: 260px;
-  margin-left: 20;
+  width: 90%;
+  margin-left: 6%;
   margin-top: 5px;
 }
 
 #resumebutton{
-  margin-left: 24px;
-  width: 465px;
-}
-
-#skillsbtn{
-  background-color: red;
+  margin-left: 2.375%;
+  width: 46.25%;
 }

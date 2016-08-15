@@ -3,22 +3,14 @@ h2 {
   font-weight: 200;
 }
 
-#python, #django, #rest, #html, #css{
-  display: inline-block;
-  align-items: center;
+#portfoliobutton{
+  width: 100%;
+  margin-bottom: 5px;
 }
 
-#python{
-  float: left;
-}
-
-#django, #rest, #html{
-  margin-left: 6.25%;
-}
-
-#css{
-  float: right;
-}
+ #resumebtn{
+   width: 100%;
+ }
 
 #logo{
   padding-left: 20px;

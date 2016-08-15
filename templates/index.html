@@ -4,12 +4,13 @@
 
 {% block introcontent %}
 <div id="about">
-  <img id="gears" src="{% static 'app/images/gears.jpg' %}" class="z-depth-3 hide-on-small-only" alt="Bill Gardner"></img>
+  <img id="gears" src="{% static 'app/images/gears.jpg' %}" class="z-depth-3 hide-on-med-and-down" alt="Bill Gardner"></img>
+  <img id="gears" src="{% static 'app/images/gears_md.jpg' %}" class="z-depth-3 hide-on-small-only hide-on-large-only" alt="Bill Gardner"></img>
 </div>
 {% endblock %}
 {% block about %}
 <div class="container">
-  <h2 class="center-align">BILL GARDNER &nbsp | &nbsp <small>BACKEND DEVELOPER</small></h2>
+  <h2 class="center-align">BILL GARDNER <small>BACKEND DEVELOPER</small></h2>
   <hr>
   <p class="flow-text center-align">I am a recent graduate of The Iron Yard in Greenville, SC, where I studied backend development,  including Python and Django, with the goal of creating elegant and useful web-based tools.   I’m experienced in backend web development, object-oriented and functional programming, and relational database integration.</p>
   <p class="flow-text center-align">I have previously spent more than 15 years working in
@@ -37,8 +38,8 @@
           <p>Subasmbly: Online Bill of Materials</p>
         </div>
           <div class="card-action">
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">More Information</a>
-            <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="http://www.subasmbly.com" target="blank">Open Subasmbly.com</a>
+            <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger" href="#modal1">More Information</a>
+            <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger z-depth-2" href="http://www.subasmbly.com" target="blank">Open Subasmbly.com</a>
           </div>
         </div>
       </div>
@@ -48,11 +49,11 @@
             <img class="materialboxed" src="{% static 'app/images/billslist.jpg' %}" alt="" />
           </div>
         <div class="card-content">
-          <p>Bill's List, A Place for Things and Stuff</p>
+          <p>Bill's List, A Place for Things & Stuff</p>
         </div>
           <div class="card-action">
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal2">More Information</a>
-            <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billslist.herokuapp.com/" target="blank">Open Bill's List</a>
+            <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger" href="#modal2">More Information</a>
+            <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billslist.herokuapp.com/" target="blank">Open Bill's List</a>
           </div>
         </div>
       </div>
@@ -65,8 +66,8 @@
           <p>Bil.ly - URL Shortener</p>
         </div>
           <div class="card-action">
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal3">More Information</a>
-            <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billdotly.herokuapp.com/" target="blank">Open bil.ly</a>
+            <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger" href="#modal3">More Information</a>
+            <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billdotly.herokuapp.com/" target="blank">Open bil.ly</a>
           </div>
         </div>
         </div>
@@ -90,7 +91,7 @@
     <!-- Modal Structure -->
     <div id="modal2" class="modal">
       <div class="modal-content">
-        <h4 class="flow-text">Subasmbly</h4>
+        <h4 class="flow-text">Bill's List</h4>
         <p class="flow-text">Bill's List is a Craig's List clone, written as part of the curriculum at The Iron Yard.  Users can make profiles, log in, and post new listings.</p>
         <p class="flow-text">Bill's List also incorporates a REST API and RESTful urls.</p>
         <p class="flow-text">Technologies used: Python, Django, Django REST Framework, Heroku</p>
@@ -103,7 +104,7 @@
     <!-- Modal Structure -->
     <div id="modal3" class="modal">
       <div class="modal-content">
-        <h4 class="flow-text">Subasmbly</h4>
+        <h4 class="flow-text">Bil.ly</h4>
         <p class="flow-text">Bil.ly is a url shortener, written as part of the curriculum at The Iron Yard.  Much like popular service Bit.ly, users can make profiles, log in, shorten urls, and save them to their profile.</p>
         <p class="flow-text">Technologies used: Python, Django, HashIDs, Heroku</p>
       </div>
@@ -329,16 +330,16 @@
   </ul>
   <div class="row hide-on-med-and-down">
     <div class="col l6">
-      <a class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" target="blank">Click to View My Resume</a>
+      <a id="resumebtn" class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" target="blank">Click to View My Resume</a>
     </div>
     <div class="col l6 right-align">
-      <a class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" download>Click to Download My Resume in .pdf Formatting</a>
+      <a id="resumebtn" class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" download>Click to Download My Resume in .pdf Formatting</a>
     </div>
   </div>
   <div class="row hide-on-large-only">
     <div class="col s12 m12 center-align">
-      <a class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" target="blank">Click to View My Resume</a>
-      <a class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" download>Click to Download My Resume in .pdf Formatting</a>
+      <a id="resumebtn" class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" target="blank">Click to View My Resume</a>
+      <a id="resumebtn" class="waves-effect waves-light btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" download>Click to Download My Resume in .pdf Formatting</a>
     </div>
   </div>
     <br>

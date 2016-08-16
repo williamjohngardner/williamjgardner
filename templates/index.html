@@ -10,7 +10,7 @@
 {% endblock %}
 {% block about %}
 <div class="container">
-  <h2 class="center-align">BILL GARDNER <small>BACKEND DEVELOPER</small></h2>
+  <h2 class="center-align">BILL GARDNER &nbsp <small>BACKEND DEVELOPER</small></h2>
   <hr>
   <p class="flow-text center-align">I am a recent graduate of The Iron Yard in Greenville, SC, where I studied backend development,  including Python and Django, with the goal of creating elegant and useful web-based tools.   I’m experienced in backend web development, object-oriented and functional programming, and relational database integration.</p>
   <p class="flow-text center-align">I have previously spent more than 15 years working in
@@ -31,46 +31,50 @@
   <div class="row">
       <div class="col s12 m12 l4">
         <div class="card medium card-panel hoverable z-depth-5">
+          <div class="card-content">
+            <p class="center-align">Subasmbly: Online Bill of Materials <br>Revision Control App</p>
+          </div>
           <div class="card-image">
             <img class="materialboxed" src="{% static 'app/images/subasmbly.jpg' %}" alt="subasmbly" />
           </div>
-        <div class="card-content">
-          <p>Subasmbly: Online Bill of Materials</p>
-        </div>
+
           <div class="card-action">
             <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger" href="#modal1">More Information</a>
+            <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger" href="https://github.com/williamjohngardner/bill_of_materials" target="blank">GitHub Repository</a>
             <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger z-depth-2" href="http://www.subasmbly.com" target="blank">Open Subasmbly.com</a>
           </div>
         </div>
       </div>
       <div class="col s12 m12 l4">
         <div class="card medium card-panel hoverable z-depth-5">
+          <div class="card-content">
+            <p class="center-align">Bill's List, A Place for Things & Stuff <br>Craig's List Clone</p>
+          </div>
           <div class="card-image">
             <img class="materialboxed" src="{% static 'app/images/billslist.jpg' %}" alt="" />
           </div>
-        <div class="card-content">
-          <p>Bill's List, A Place for Things & Stuff</p>
-        </div>
           <div class="card-action">
             <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger" href="#modal2">More Information</a>
+            <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger" href="https://github.com/williamjohngardner/billslist" target="blank">GitHub Repository</a>
             <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billslist.herokuapp.com/" target="blank">Open Bill's List</a>
           </div>
         </div>
       </div>
       <div class="col s12 m12 l4">
         <div class="card medium card-panel hoverable z-depth-5">
+          <div class="card-content">
+            <p class="center-align">Bil.ly - URL Shortener <br>Bit.ly Clone</p>
+          </div>
           <div class="card-image">
             <img class="materialboxed" src="{% static 'app/images/billy.jpg' %}" alt="" />
           </div>
-        <div class="card-content">
-          <p>Bil.ly - URL Shortener</p>
-        </div>
           <div class="card-action">
             <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger" href="#modal3">More Information</a>
+            <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger" href="https://github.com/williamjohngardner/url_shortener" target="blank">GitHub Repository</a>
             <a id="portfoliobutton" class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billdotly.herokuapp.com/" target="blank">Open bil.ly</a>
           </div>
         </div>
-        </div>
+      </div>
   </div>
   <br>
   <br>
@@ -79,38 +83,133 @@
     <!-- Modal Structure -->
     <div id="modal1" class="modal">
       <div class="modal-content">
-        <h4 class="flow-text">Subasmbly</h4>
-        <p class="flow-text">Subasmbly is a Bill of Materials application designed to put high quality revision control and customer and supplier management into the hand of Makers who previously only had Excel to execute their BoMs</p>
-        <p class="flow-text">Technologies used: Python, Django, Highton API Module, Heroku</p>
+        <h5>Subasmbly: Final project for The Iron Yard</h5>
+        <hr>
+        <p>Subasmbly is a bill of materials application meant for Makers, hobbyists, and small businesses who previously relied on Excel spreadsheets for bill of materials management.</p>
+        <p>A gap in the market exists between Excel and enterprise level DBA systems like SAP and Subasmbly aims to provide part and revision management, as well as customer and supplier management tools to those who could not previously afford them.</p>
+        <hr>
+        <h6>Technologies implemented: </h6>
+        <div class="row">
+          <div class="col m3">
+            <p>Python</p>
+            <p>Django</p>
+            <p>Django Inline Formsets</p>
+          </div>
+          <div class="col m3">
+            <p>Django Extra Views</p>
+            <p>Bootstrap</p>
+            <p>Pillow</p>
+          </div>
+          <div class="col m3">
+            <p>Highton API</p>
+            <p>HTML5</p>
+            <p>Heroku</p>
+          </div>
+          <div class="col m3">
+            <p>requests</p>
+            <p>gunicorn</p>
+            <p>AWS S3</p>
+            <p>psycopg2</p>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
-        <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="http://www.subasmbly.com" target="blank">Open Subasmbly.com</a>
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        <div class="row">
+          <div class="col m4">
+            <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="http://www.subasmbly.com" target="blank">Open Subasmbly.com</a>
+          </div>
+          <div class="col m4">
+            <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://github.com/williamjohngardner/bill_of_materials" target="blank">GitHub Repository</a>
+          </div>
+          <div class="col m4">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Modal Structure -->
     <div id="modal2" class="modal">
       <div class="modal-content">
-        <h4 class="flow-text">Bill's List</h4>
-        <p class="flow-text">Bill's List is a Craig's List clone, written as part of the curriculum at The Iron Yard.  Users can make profiles, log in, and post new listings.</p>
-        <p class="flow-text">Bill's List also incorporates a REST API and RESTful urls.</p>
-        <p class="flow-text">Technologies used: Python, Django, Django REST Framework, Heroku</p>
+        <h5>Bill's List: A Craig's List Clone</h5>
+        <hr>
+        <p>Bill's List is a Craig's List clone, written as part of the curriculum at The Iron Yard.  Users can make profiles, log in, and post new listings, just like the real thing!.</p>
+        <p>Bill's List also incorporates a REST API and RESTful urls.</p>
+        <hr>
+        <h6>Technologies implemented: </h6>
+        <div class="row">
+          <div class="col m3">
+            <p>Python</p>
+            <p>Django</p>
+            <p>Django REST Framework</p>
+          </div>
+          <div class="col m3">
+            <p>Bootstrap</p>
+            <p>Pillow</p>
+          </div>
+          <div class="col m3">
+            <p>HTML5</p>
+            <p>Heroku</p>
+          </div>
+          <div class="col m3">
+            <p>gunicorn</p>
+            <p>Whitenoise</p>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
-        <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billslist.herokuapp.com/" target="blank">Open Bill's List</a>
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        <div class="row">
+          <div class="col m4">
+            <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billslist.herokuapp.com/" target="blank">Open Bill's List</a>
+          </div>
+          <div class="col m4">
+            <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://github.com/williamjohngardner/billslist" target="blank">GitHub Repository</a>
+          </div>
+          <div class="col m4">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Modal Structure -->
     <div id="modal3" class="modal">
       <div class="modal-content">
-        <h4 class="flow-text">Bil.ly</h4>
-        <p class="flow-text">Bil.ly is a url shortener, written as part of the curriculum at The Iron Yard.  Much like popular service Bit.ly, users can make profiles, log in, shorten urls, and save them to their profile.</p>
-        <p class="flow-text">Technologies used: Python, Django, HashIDs, Heroku</p>
+        <h5>Bil.ly</h5>
+        <hr>
+        <p>Bil.ly is a url shortener, written as part of the curriculum at The Iron Yard.  Much like popular service Bit.ly, users can make profiles, log in, shorten urls, and save them to their profile.</p>
+        <p>Bil.ly incorporates Hash IDs as a secure way to encrypt urls.</p>
+        <hr>
+        <h6>Technologies implemented: </h6>
+        <div class="row">
+          <div class="col m3">
+            <p>Python</p>
+            <p>Django</p>
+          </div>
+          <div class="col m3">
+            <p>HashIDs</p>
+            <p>Bootstrap</p>
+          </div>
+          <div class="col m3">
+            <p>HTML5</p>
+            <p>Heroku</p>
+          </div>
+          <div class="col m3">
+            <p>gunicorn</p>
+            <p>Whitenoise</p>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
-        <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billdotly.herokuapp.com/" target="blank">Open Bil.ly</a>
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        <div class="row">
+          <div class="col m4">
+            <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://billdotly.herokuapp.com/" target="blank">Open Bil.ly</a>
+          </div>
+          <div class="col m4">
+            <a class="waves-effect waves-light btn modal-trigger z-depth-2" href="https://github.com/williamjohngardner/url_shortener" target="blank">GitHub Repository</a>
+          </div>
+          <div class="col m4">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -143,28 +242,28 @@
       </div>
       <div class="row">
         <div class="col l4 left-align">
-          <h6 class="btn-flat disabled">Java</h6><br>
-          <h6 class="btn-flat disabled">GitHub</h6><br>
-          <h6 class="btn-flat disabled">Object Oriented Programming</h6><br>
-          <h6 class="btn-flat disabled">Functional Programming</h6><br>
-          <h6 class="btn-flat disabled">Heroku</h6><br>
-          <h6 class="btn-flat disabled">PostgreSQL</h6><br>
+          <h6 class="btn-flat disabled black-text">Java</h6><br>
+          <h6 class="btn-flat disabled black-text">GitHub</h6><br>
+          <h6 class="btn-flat disabled black-text">Object Oriented Programming</h6><br>
+          <h6 class="btn-flat disabled black-text">Functional Programming</h6><br>
+          <h6 class="btn-flat disabled black-text">Heroku</h6><br>
+          <h6 class="btn-flat disabled black-text">PostgreSQL</h6><br>
         </div>
         <div class="col l4 center-align">
-          <h6 class="btn-flat disabled">Bootstrap</h6><br>
-          <h6 class="btn-flat disabled">Materialize</h6><br>
-          <h6 class="btn-flat disabled">Adobe Photoshop</h6><br>
-          <h6 class="btn-flat disabled">Adobe Illustrator</h6><br>
-          <h6 class="btn-flat disabled">Adobe InDesign</h6><br>
-          <h6 class="btn-flat disabled">Adobe Acrobat</h6><br>
+          <h6 class="btn-flat disabled black-text">Bootstrap</h6><br>
+          <h6 class="btn-flat disabled black-text">Materialize</h6><br>
+          <h6 class="btn-flat disabled black-text">Adobe Photoshop</h6><br>
+          <h6 class="btn-flat disabled black-text">Adobe Illustrator</h6><br>
+          <h6 class="btn-flat disabled black-text">Adobe InDesign</h6><br>
+          <h6 class="btn-flat disabled black-text">Adobe Acrobat</h6><br>
         </div>
         <div class="col l4 right-align">
-          <h6 class="btn-flat disabled">ZSH</h6><br>
-          <h6 class="btn-flat disabled">Sublime Text</h6><br>
-          <h6 class="btn-flat disabled">SolidWorks</h6><br>
-          <h6 class="btn-flat disabled">Rhinoceros 3D</h6><br>
-          <h6 class="btn-flat disabled">AutoCAD</h6><br>
-          <h6 class="btn-flat disabled">Google Sketchup</h6><br>
+          <h6 class="btn-flat disabled black-text">ZSH</h6><br>
+          <h6 class="btn-flat disabled black-text">Sublime Text</h6><br>
+          <h6 class="btn-flat disabled black-text">SolidWorks</h6><br>
+          <h6 class="btn-flat disabled black-text">Rhinoceros 3D</h6><br>
+          <h6 class="btn-flat disabled black-text">AutoCAD</h6><br>
+          <h6 class="btn-flat disabled black-text">Google Sketchup</h6><br>
         </div>
       </div>
       <br>
@@ -196,28 +295,28 @@
       </div>
       <div class="row">
         <div class="col s12 m12 center-align">
-          <h6 class="btn-flat disabled">Java</h6><br>
-          <h6 class="btn-flat disabled">GitHub</h6><br>
-          <h6 class="btn-flat disabled">Object Oriented Programming</h6><br>
-          <h6 class="btn-flat disabled">Functional Programming</h6><br>
-          <h6 class="btn-flat disabled">Heroku</h6><br>
-          <h6 class="btn-flat disabled">PostgreSQL</h6><br>
+          <h6 class="btn-flat disabled black-text">Java</h6><br>
+          <h6 class="btn-flat disabled black-text">GitHub</h6><br>
+          <h6 class="btn-flat disabled black-text">Object Oriented Programming</h6><br>
+          <h6 class="btn-flat disabled black-text">Functional Programming</h6><br>
+          <h6 class="btn-flat disabled black-text">Heroku</h6><br>
+          <h6 class="btn-flat disabled black-text">PostgreSQL</h6><br>
         </div>
         <div class="col s12 m12 center-align">
-          <h6 class="btn-flat disabled">Bootstrap</h6><br>
-          <h6 class="btn-flat disabled">Materialize</h6><br>
-          <h6 class="btn-flat disabled">Adobe Photoshop</h6><br>
-          <h6 class="btn-flat disabled">Adobe Illustrator</h6><br>
-          <h6 class="btn-flat disabled">Adobe InDesign</h6><br>
-          <h6 class="btn-flat disabled">Adobe Acrobat</h6><br>
+          <h6 class="btn-flat disabled black-text">Bootstrap</h6><br>
+          <h6 class="btn-flat disabled black-text">Materialize</h6><br>
+          <h6 class="btn-flat disabled black-text">Adobe Photoshop</h6><br>
+          <h6 class="btn-flat disabled black-text">Adobe Illustrator</h6><br>
+          <h6 class="btn-flat disabled black-text">Adobe InDesign</h6><br>
+          <h6 class="btn-flat disabled black-text">Adobe Acrobat</h6><br>
         </div>
         <div class="col s12 m12 center-align">
-          <h6 class="btn-flat disabled">ZSH</h6><br>
-          <h6 class="btn-flat disabled">Sublime Text</h6><br>
-          <h6 class="btn-flat disabled">SolidWorks</h6><br>
-          <h6 class="btn-flat disabled">Rhinoceros 3D</h6><br>
-          <h6 class="btn-flat disabled">AutoCAD</h6><br>
-          <h6 class="btn-flat disabled">Google Sketchup</h6><br>
+          <h6 class="btn-flat disabled black-text">ZSH</h6><br>
+          <h6 class="btn-flat disabled black-text">Sublime Text</h6><br>
+          <h6 class="btn-flat disabled black-text">SolidWorks</h6><br>
+          <h6 class="btn-flat disabled black-text">Rhinoceros 3D</h6><br>
+          <h6 class="btn-flat disabled black-text">AutoCAD</h6><br>
+          <h6 class="btn-flat disabled black-text">Google Sketchup</h6><br>
         </div>
       </div>
       <br>
@@ -241,60 +340,54 @@
       <div class="collapsible-header flow-text"><i class="material-icons">list</i>Technical Skills</div>
       <div class="collapsible-body white">
         <div class="container">
-          <table>
-            <tr>
-              <td class="btn-flat disabled" width="175px">Python</td>
-              <td class="btn-flat disabled" width="175px">Django</td>
-              <td class="btn-flat disabled" width="175px">HTML5</td>
-              <td class="btn-flat disabled" width="175px">CSS3</td>
-            </tr>
-            <tr>
-              <td class="btn-flat disabled" width="175px">Java</td>
-              <td class="btn-flat disabled" width="175px">Heroku</td>
-              <td class="btn-flat disabled" width="175px">Github</td>
-              <td class="btn-flat disabled" width="175px">PostgreSQL</td>
-            </tr>
-            <tr>
-              <td class="btn-flat disabled" width="175px">Bootstrap</td>
-              <td class="btn-flat disabled" width="175px">Materialize</td>
-              <td class="btn-flat disabled" width="175px">ZSH</td>
-              <td class="btn-flat disabled" width="175px">RESTful APIs</td>
-            </tr>
-            <tr>
-              <td class="btn-flat disabled" width="175px">Photoshop</td>
-              <td class="btn-flat disabled" width="175px">Illustrator</td>
-              <td class="btn-flat disabled" width="175px">In Design</td>
-              <td class="btn-flat disabled" width="175px">Acrobat</td>
-            </tr>
-            <tr>
-              <td class="btn-flat disabled" width="175px">Solidworks</td>
-              <td class="btn-flat disabled" width="175px">Rhino3D</td>
-              <td class="btn-flat disabled" width="175px">AutoCAD</td>
-              <td class="btn-flat disabled" width="175px">Sketchup</td>
-            </tr>
-            <tr>
-              <td class="btn-flat disabled" width="350px">Object Oriented Programming</td>
-              <td class="btn-flat disabled" width="350px">Functional Programming</td>
-            </tr>
-          </table>
+          <div class="row">
+            <div class="col m3">
+              <h6 class="btn-flat disabled black-text" width="175px">Python</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">Java</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">Bootstrap</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">Photoshop</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">Solidworks</h6>
+            </div>
+            <div class="col m3">
+              <h6 class="btn-flat disabled black-text" width="175px">Django</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">Heroku</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">Materialize</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">Illustrator</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">Rhino3D</h6>
+            </div>
+            <div class="col m3">
+              <h6 class="btn-flat disabled black-text" width="175px">HTML5</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">Github</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">ZSH</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">In-Design</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">AutoCAD</h6>
+            </div>
+            <div class="col m3">
+              <h6 class="btn-flat disabled black-text" width="175px">CSS3</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">RESTful API</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">PostgreSQL</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">Acrobat</h6>
+              <h6 class="btn-flat disabled black-text" width="175px">Sketchup</h6>
+            </div>
+          </div>
         </div>
     </li>
     <li>
       <div class="collapsible-header flow-text"><i class="material-icons">assignment</i>Education</div>
       <div class="collapsible-body white">
         <div class="container">
-          <table>
-            <tr>
-              <td><h6 class="flow-text">Python & Django Curriculum</h6></td>
-              <td><h6 class="flow-text">The Iron Yard</h6></td>
-              <td><h6 class="flow-text">May – August 2016</h6></td>
-            </tr>
-            <tr>
-              <td><h6 class="flow-text">B.S Industrial Design</h6></td>
-              <td><h6 class="flow-text">Virginia Tech</h6></td>
-              <td><h6 class="flow-text">May 2000, Cum Laude</h6></td>
-            </tr>
-          </table>
+            <div class="row">
+              <div class="col m6">
+                <h5>Python & Django Curriculum</h5>
+                <h6>The Iron Yard</h6>
+                <h6>May – August 2016</h6>
+              </div>
+              <div class="col m6">
+                <h5>B.S Industrial Design</h5>
+                <h6>Virginia Tech</h6>
+                <h6>May 2000, Cum Laude</h6>
+              </div>
+            </div>
         </div>
     </li>
     <li>
@@ -303,29 +396,34 @@
         <div class="container">
           <br>
           <ul>
-            <li class="flow-text">Childrens Health Board: <small>Wordpress Website & Hosting Setup</small></li>
-            <li class="flow-text">Sunica.org: <small>Wordpress Website & Hosting Setup</small></li>
-            <li class="flow-text">DC Design House: <small>Wordpress Website, Hosting, Social Media</small></li>
-            <li class="flow-text">American Grilling Club: <small>Wordpress Website & Branding</small></li>
-            <li class="flow-text">FutureCare Maryland: <small>Existing Wordpress Website Maintenance</small></li>
-            <li class="flow-text">Lorenz Consulting LLC: <small>Wordpress Website & Hosting Setup</small></li>
+            <li><h5>Childrens Health Board: <small>Wordpress Website & Hosting Setup</small></h5></li>
+            <li><h5>Sunica.org: <small>Wordpress Website & Hosting Setup</small></h5></li>
+            <li><h5>DC Design House: <small>Wordpress Website, Hosting, Social Media</small></h5></li>
+            <li><h5>American Grilling Club: <small>Wordpress Website & Branding</small></h5></li>
+            <li><h5>FutureCare Maryland: <small>Existing Wordpress Website Maintenance</small></h5></li>
+            <li><h5>Lorenz Consulting LLC: <small>Wordpress Website & Hosting Setup</small></h5></li>
           </ul>
           <br>
         </div>
       </div>
     </li>
     <li>
-      <div class="collapsible-header flow-text"><i class="material-icons">work</i>Recent Experience</div>
+      <div class="collapsible-header flow-text"><i class="material-icons">work</i>Recent Work Experience</div>
       <div class="collapsible-body white">
         <div class="container">
-          <h5>Principal, 2011-2016</h5>
-          <h5>William John Gardner Design Studio, LLC</h5>
-          <h6>Furniture design and development startup focused on providing high end custom designs to interior designers in the Washington, DC area.</h6>
-            <br>
-          <h5>Design Development Manager, 2007-2010</h5>
-          <h5>Niermann Weeks</h5>
-          <h6>Oversaw design department for respected furniture design and manufacturer with a catalog of over 600 designs.</h6></div>
-        </div>
+          <br>
+          <ul>
+            <li><h5>Principal, 2011-2016: <small>William John Gardner Design Studio, LLC</small></h5></li>
+            <li><h6>Furniture design and development startup focused on providing high end custom designs to interior designers in the Washington, DC area.</h6></li>
+          </ul>
+          <br>
+          <ul>
+            <li><h5>Design Development Manager, 2007-2010: <small>Niermann Weeks</small></h5></li>
+            <li><h6>Oversaw design department for respected furniture design and manufacturer with a catalog of over 600 designs.</h6></li>
+          </ul>
+          <br>
+          </div>
+      </div>
     </li>
   </ul>
   <div class="row hide-on-med-and-down">
@@ -370,23 +468,21 @@
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <br>
-          <br>
           <div class="row">
             <div class="col s12 m12 l4">
-                <p class="white-text">A Little About Me:</p>
-                <p class="white-text"><small>While new to coding, I have been making things for as long as I've been big enough to hold a hammer.</small></p>
+                <p class="white-text">I Make Things:</p>
+                <p class="white-text"><small>I've been making things for as long as I've been big enough to hold a hammer, and would rather own something made either by me or by a friend any day over a store-bought item.
+                Some of the things I've made include furniture, lighting, the world's 4th largest train set, a house, theatrical stages, and movie props.</small></p>
             </div>
             <div class="col s12 m12 l4">
-                <p class="white-text"><small>I have studied both architecture and product design and have a complete fixation on mid-century furniture and designs.</small></p>
+              <p class="white-text">I Design Things:</p>
+                <p class="white-text"><small>I have studied both architecture and product design, have a complete fixation on mid-century furniture and designs and have owned my own furniture design studio
+                where I've had some of my designs published in magazines and blogs. <br><a href="http://www.williamjohngardner.com" target="blank">Click Here</a> to see some of my furniture designs.</small></p>
             </div>
             <div class="col s12 m12 l4">
-              <p class="white-text"><small>I have owned my own furniture design studio and have had some of my designs published in magazines and blogs. <br><a href="http://www.williamjohngardner.com" target="blank">Click Here</a> to see my furniture portfolio.</small></p>
-            </div>
-            <div class="row divider"
-            <div class="row">
-              <div class="col s12 m12 l4">
-              </div>
+              <p class="white-text">I Do Things:</p>
+              <p class="white-text"><small>My favorite things include witty banter, playing a bass guitar with friends (either electric, acoustic, or my cigar box bass),
+              traveling, being exposed to new cultures/information/points of view, and being a little bit of a beer snob.</small></p>
             </div>
           </div>
         </div>

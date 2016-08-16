@@ -19,3 +19,7 @@ h2 {
 #btn{
   width: 150px;
 }
+
+.card.medium {
+    height: 450px;
+}

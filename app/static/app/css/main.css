@@ -24,3 +24,9 @@ h2 {
 .card.medium {
     height: 450px;
 }
+
+@media screen and (max-width: 700px) {
+  .card-image {
+    display: none;
+  }
+}

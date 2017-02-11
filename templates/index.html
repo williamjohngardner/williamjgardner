@@ -29,13 +29,48 @@
   <hr>
   <br>
   <div class="row">
+    <div class="col l2"></div>
+    <div class="col s12 m12 l4">
+      <div class="card medium card-panel hoverable z-depth-5">
+        <div class="card-content">
+          <p class="center-align">Madalon Law Firm<br>Corporate Website</p>
+        </div>
+        <div class="card-image">
+          <img id="modalimg" class="materialboxed" src="{% static 'app/images/madalon.jpg' %}" alt="Madalon" />
+        </div>
+
+        <div class="card-action">
+          <a id="portfoliobutton" class="waves-effect grey darken-3 btn modal-trigger" href="#modal4">More Information</a>
+          <a id="portfoliobutton" class="waves-effect grey darken-3 btn modal-trigger" href="https://github.com/williamjohngardner/wordpress_template_001" target="blank">GitHub Repository</a>
+          <a id="portfoliobutton" class="waves-effect grey darken-3 btn modal-trigger z-depth-2" href="http://www.madalonlaw.com" target="blank">Open Madalon Law</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m12 l4">
+      <div class="card medium card-panel hoverable z-depth-5">
+        <div class="card-content">
+          <p class="center-align">Get Found Now<br>Corporate Website</p>
+        </div>
+        <div class="card-image">
+          <img id="modalimg" class="materialboxed" src="{% static 'app/images/getfoundnow.jpg' %}" alt="Madalon" />
+        </div>
+
+        <div class="card-action">
+          <a id="portfoliobutton" class="waves-effect grey darken-3 btn modal-trigger" href="#modal5">More Information</a>
+          <a id="portfoliobutton" class="waves-effect grey darken-3 btn modal-trigger z-depth-2" href="http://www.getfoundnow.co" target="blank">Open GetFoundNow.co</a>
+        </div>
+      </div>
+    </div>
+    <div class="col l2"></div>
+  </div>
+  <div class="row">
       <div class="col s12 m12 l4">
         <div class="card medium card-panel hoverable z-depth-5">
           <div class="card-content">
             <p class="center-align">Subasmbly: Online Bill of Materials <br>Revision Control App</p>
           </div>
           <div class="card-image">
-            <img class="materialboxed" src="{% static 'app/images/subasmbly.jpg' %}" alt="subasmbly" />
+            <img id="modalimg" class="materialboxed" src="{% static 'app/images/subasmbly.jpg' %}" alt="subasmbly" />
           </div>
 
           <div class="card-action">
@@ -205,6 +240,63 @@
           </div>
           <div class="col m4">
             <a class="waves-effect grey darken-3 btn modal-trigger z-depth-2" href="https://github.com/williamjohngardner/url_shortener" target="blank">GitHub Repository</a>
+          </div>
+          <div class="col m4">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <h5>MadalonLaw.com - The Corporate Website for Madalon Law</h5>
+        <hr>
+        <p>Madalon Law</p>
+        <hr>
+        <h6>Technologies implemented: </h6>
+        <div class="row">
+          <div class="col m3">
+            <p>Wordpress CMS</p>
+            <p>HTML</p>
+            <p>CSS</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row">
+          <div class="col m4">
+            <a class="waves-effect grey darken-3 btn modal-trigger z-depth-2" href="http://www.madalonlaw.com" target="blank">Open MadalonLaw.com</a>
+          </div>
+          <div class="col m4">
+            <a class="waves-effect grey darken-3 btn modal-trigger z-depth-2" href="https://github.com/williamjohngardner/wordpress_template_001" target="blank">GitHub Repository</a>
+          </div>
+          <div class="col m4">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <h5>GetFoundNow.co - Corporate Website</h5>
+        <hr>
+        <p>Get Found Now</p>
+        <hr>
+        <h6>Technologies implemented: </h6>
+        <div class="row">
+          <div class="col m3">
+            <p>Wordpress CMS</p>
+            <p>HTML</p>
+            <p>CSS</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row">
+          <div class="col m4">
+            <a class="waves-effect grey darken-3 btn modal-trigger z-depth-2" href="http://www.getfoundnow.co" target="blank">Open GetFoundNow.co</a>
           </div>
           <div class="col m4">
             <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -474,6 +566,9 @@
     <h2 class="header">contact me:</h2>
     <hr>
     <br>
+    <div class="card-image-mobile">
+      <img src="{% static 'app/images/headshot.jpg' %}" width="347px" height="438px" alt="Bill Gardner Headshot" />
+    </div>
     <div class="card horizontal blue-grey darken-1 z-depth-4">
       <div class="card-image">
         <img src="{% static 'app/images/headshot.jpg' %}" width="290px" height="366px" alt="Bill Gardner Headshot" />

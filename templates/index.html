@@ -3,22 +3,22 @@
 
 
 {% block introcontent %}
-<div id="about">
-  <img src="{% static 'app/images/gears.jpg' %}" class="z-depth-3 hide-on-med-and-down" alt="Bill Gardner"></img>
-  <img src="{% static 'app/images/gears_md.jpg' %}" class="z-depth-3 hide-on-small-only hide-on-large-only" alt="Bill Gardner"></img>
-</div>
+  <div id="about">
+    <img src="{% static 'app/images/gears.jpg' %}" class="z-depth-3 hide-on-med-and-down" alt="Bill Gardner"></img>
+    <img src="{% static 'app/images/gears_md.jpg' %}" class="z-depth-3 hide-on-small-only hide-on-large-only" alt="Bill Gardner"></img>
+  </div>
 {% endblock %}
 {% block about %}
-<div class="container">
-  <h2 class="center-align">BILL GARDNER &nbsp <small>WEB DEVELOPER</small></h2>
-  <hr>
-  <p class="flow-text center-align">I am a recent graduate of The Iron Yard in Greenville, SC, where I studied web development utilizing Python and Django, with the goal of creating elegant and useful web-based tools.   I’m experienced in backend web development, object-oriented and functional programming, and relational database integration.</p>
-  <p class="flow-text center-align">I have previously spent more than 15 years working in
-  manufacturing environments as both an engineer and a design manager.  As a result, I have a wealth of knowledge and
-  experience creating products in an organized, thoughtful, and cost-effective manner.</p>
-  <br>
-  <br>
-</div>
+  <div class="container">
+    <h2 class="center-align">BILL GARDNER &nbsp <small>WEB DEVELOPER</small></h2>
+    <hr>
+    <p class="flow-text center-align">I am a recent graduate of The Iron Yard in Greenville, SC, where I studied web development utilizing Python and Django, with the goal of creating elegant and useful web-based tools.   I’m experienced in backend web development, object-oriented and functional programming, and relational database integration.</p>
+    <p class="flow-text center-align">I have previously spent more than 15 years working in
+    manufacturing environments as both an engineer and a design manager.  As a result, I have a wealth of knowledge and
+    experience creating products in an organized, thoughtful, and cost-effective manner.</p>
+    <br>
+    <br>
+  </div>
 {% endblock %}
 {% block portfolio %}
 <div id="portfolio" class="blue-grey darken-1 z-depth-3">
@@ -111,11 +111,45 @@
         </div>
       </div>
   </div>
+  <div class="row">
+    <div class="col l2"></div>
+    <div class="col s12 m12 l4">
+      <div class="card medium card-panel hoverable z-depth-5">
+        <div class="card-content">
+          <p class="center-align">DC Design House<br>Non Profit Website (Pro Bono)</p>
+        </div>
+        <div class="card-image">
+          <img id="modalimg" class="materialboxed" src="{% static 'app/images/dcdh.jpg' %}" alt="DC Design House" />
+        </div>
+
+        <div class="card-action">
+          <a id="portfoliobutton" class="waves-effect grey darken-3 btn modal-trigger" href="#modal6">More Information</a>
+          <a id="portfoliobutton" class="waves-effect grey darken-3 btn modal-trigger z-depth-2" href="http://www.dcdesignhouse.com" target="blank">DC Design House</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m12 l4">
+      <div class="card medium card-panel hoverable z-depth-5">
+        <div class="card-content">
+          <p class="center-align">Childrens' Health Board<br>Non Profit Website (Pro Bono)</p>
+        </div>
+        <div class="card-image">
+          <img id="modalimg" class="materialboxed" src="{% static 'app/images/chb.jpg' %}" alt="Childrens Health Board" />
+        </div>
+
+        <div class="card-action">
+          <a id="portfoliobutton" class="waves-effect grey darken-3 btn modal-trigger" href="#modal7">More Information</a>
+          <a id="portfoliobutton" class="waves-effect grey darken-3 btn modal-trigger z-depth-2" href="http://www.childrenshealthboard.org" target="blank">Open Childrens' Health Board</a>
+        </div>
+      </div>
+    </div>
+    <div class="col l2"></div>
+  </div>
   <br>
   <br>
   <br>
   <br>
-    <!-- Modal Structure -->
+    <!-- Modal Structure 1-->
     <div id="modal1" class="modal">
       <div class="modal-content">
         <h5>Subasmbly: Final project for The Iron Yard</h5>
@@ -162,7 +196,7 @@
         </div>
       </div>
     </div>
-    <!-- Modal Structure -->
+    <!-- Modal Structure 2-->
     <div id="modal2" class="modal">
       <div class="modal-content">
         <h5>Bill's List: A Craig's List Clone</h5>
@@ -205,7 +239,7 @@
         </div>
       </div>
     </div>
-    <!-- Modal Structure -->
+    <!-- Modal Structure 3-->
     <div id="modal3" class="modal">
       <div class="modal-content">
         <h5>Bil.ly</h5>
@@ -247,7 +281,7 @@
         </div>
       </div>
     </div>
-    <!-- Modal Structure -->
+    <!-- Modal Structure 4-->
     <div id="modal4" class="modal">
       <div class="modal-content">
         <h5>MadalonLaw.com - The Corporate Website for Madalon Law</h5>
@@ -277,7 +311,7 @@
         </div>
       </div>
     </div>
-    <!-- Modal Structure -->
+    <!-- Modal Structure 5-->
     <div id="modal5" class="modal">
       <div class="modal-content">
         <h5>GetFoundNow.co - Corporate Website</h5>
@@ -297,6 +331,61 @@
         <div class="row">
           <div class="col m4">
             <a class="waves-effect grey darken-3 btn modal-trigger z-depth-2" href="http://www.getfoundnow.co" target="blank">Open GetFoundNow.co</a>
+          </div>
+          <div class="col m4">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Structure 6-->
+    <div id="modal6" class="modal">
+      <div class="modal-content">
+        <h5>DC Design House<br>Non Profit Website (Pro Bono)</h5>
+        <hr>
+        <p>DC Design House</p>
+        <hr>
+        <h6>Technologies implemented: </h6>
+        <div class="row">
+          <div class="col m3">
+            <p>Wordpress CMS</p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Various APIs: including EventBrite, MailChimp, &amp; Various Social Media</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row">
+          <div class="col m4">
+            <a class="waves-effect grey darken-3 btn modal-trigger z-depth-2" href="http://www.dcdesignhouse.com" target="blank">Open DC Design House</a>
+          </div>
+          <div class="col m4">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Structure 7-->
+    <div id="modal7" class="modal">
+      <div class="modal-content">
+        <h5>Childrens' Health Board<br>Non Profit Website (Pro Bono)</h5>
+        <hr>
+        <p>Childrens' Health Board</p>
+        <hr>
+        <h6>Technologies implemented: </h6>
+        <div class="row">
+          <div class="col m3">
+            <p>Wordpress CMS</p>
+            <p>HTML</p>
+            <p>CSS</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row">
+          <div class="col m4">
+            <a class="waves-effect grey darken-3 btn modal-trigger z-depth-2" href="http://www.childrenshealthboard.org" target="blank">Open Childrens' Health Board</a>
           </div>
           <div class="col m4">
             <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>

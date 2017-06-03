@@ -5,7 +5,7 @@
 {% block introcontent %}
   <div id="about">
     <img src="{% static 'app/images/gears.jpg' %}" class="z-depth-3 hide-on-med-and-down" alt="Bill Gardner"></img>
-    <img src="{% static 'app/images/gears_md.jpg' %}" class="z-depth-3 hide-on-small-only hide-on-large-only" alt="Bill Gardner"></img>
+    <img src="{% static 'app/images/gears_md.jpg' %}" class="z-depth-3 hide-on-large-only" alt="Bill Gardner"></img>
   </div>
 {% endblock %}
 {% block about %}
@@ -657,7 +657,7 @@
         <a id="resumebtn" class="waves-effect grey darken-3 btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" target="blank">Click to View My Resume</a>
     </div>
     <div class="col l6 right-align">
-      <a id="resumebtn" class="waves-effect grey darken-3 btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" download>Click to Download My Resume in .pdf Formatting</a>
+      <a id="resumebtn" class="waves-effect grey darken-3 btn-large z-depth-3" href="{% static 'app/images/gardner_resume.pdf' %}" download>Download My Resume as .pdf</a>
     </div>
   </div>
   <div class="row hide-on-large-only">

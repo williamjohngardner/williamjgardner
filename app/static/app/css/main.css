@@ -1,9 +1,13 @@
 h2 {
-  font-family:Roboto;
+  font-family:'Roboto', sans-serif;
   font-weight: 200;
 }
 
-#portfoliobutton{
+#header-image-med {
+  width: 375px;
+}
+
+#portfoliobutton {
   width: 100%;
   margin-bottom: 5px;
 }
@@ -13,11 +17,23 @@ h2 {
    margin-top: 10px;
  }
 
-#logo{
+ #resumebtn_mobile {
+   width: 290px;
+   margin-top: 10px;
+ }
+
+#logo {
   padding-left: 20px;
 }
 
-#btn{
+#logo-mobile {
+  font-size: 1.5em;
+  margin-left: 0;
+  padding-left: 0;
+
+}
+
+#btn {
   width: 150px;
 }
 
@@ -45,6 +61,4 @@ h2 {
   #headshot-dsktop {
     display: none;
   }
-
-
 }

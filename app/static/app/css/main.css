@@ -62,3 +62,7 @@ h2 {
     display: none;
   }
 }
+
+.material-icons {
+  -ms-display: none;
+}
